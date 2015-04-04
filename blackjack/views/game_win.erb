@@ -1,0 +1,5 @@
+<div class="alert alert-success"><%= session[:winner] %></div>
+
+<h3>Hooray, you beat the House!</h3>
+<h4>With $<%= session[:player_money] %>, <%= session[:player_name] %> made it big!</h4>
+<p><a href='/new_player' class='btn btn-primary'>Anyone else up to the challenge?</a></p>

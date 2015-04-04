@@ -1,0 +1,10 @@
+<% if session[:loser] %>
+  <div class="alert alert-error"><%= session[:loser] %></div>
+
+  <h3>Oh no! <%= session[:player_name] %>'s broke.</h3>
+  <h4><%= session[:player_name] %> failed to make it big, earning more than $500.</h4>
+  <p>Thanks for playing! Try again next time. <br/><a href='/new_player' class='btn btn-primary'>Anyone else up to the challenge?</a></p>
+<% else %>
+  <h3>You quit? Oh, well.</h3>
+  <p>Try again next time. <br/><a href='/new_player' class='btn btn-primary'>Anyone else up to the challenge?</a></p>
+<% end %>
